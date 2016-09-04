@@ -1,0 +1,24 @@
+{
+  "name": "angular-ui-router-stately",
+  "version": "0.0.1",
+  "description": "Functions related to helping debug and understand the state structure of a site.",
+  "main": "stately.module.js",
+  "scripts": {
+    "test": "grunt test:all",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BobChao87/angular-ui-router-stately.git"
+  },
+  "author": "BobChao87",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BobChao87/angular-ui-router-stately/issues"
+  },
+  "homepage": "https://github.com/BobChao87/angular-ui-router-stately#readme",
+  "devDependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-google": "^0.6.0"
+  }
+}
