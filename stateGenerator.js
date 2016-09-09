@@ -61,6 +61,10 @@ function stateStringGenerator(stateStructure, stateString, parentState) {
       stateNameLong = (parentState ? parentState + '.' : '') + stateName;
       stateString += "\n  .state('" + stateNameLong + "', {\n" +
         "    url: '/" + stateName + "',\n" +
+        "    template: '<div>" +
+        '<a ui-sref="' + stateNameLong + '">State ' + stateName + '</a>' +
+        '<ui-view></ui-view>' +
+        "</div>'\n" +
         '  })';
       stateString = stateStringGenerator(stateStructure[stateName], stateString, stateNameLong);
     }
@@ -68,5 +72,5 @@ function stateStringGenerator(stateStructure, stateString, parentState) {
   return stateString;
 }
 
-console.log(stateGenerator(1000, ['alpha', 'beta', 'gamma']));
+console.log(stateGenerator());
 })();
